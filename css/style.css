@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: ""
+    display: table;
+    clear: both;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://www.toledoblade.com/image/2012/04/16/norfolk-southern.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 300px;
+    margin-top: 50px;
+    background: #403B4A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E7E9BB, #403B4A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 0 14px #2f292d;
+    border-radius: 10px;;
+}
+
+#titolo {
+    text-transform: capitalize;
+    font-size: 60px;
+}
+
+.ticket {
+    width: 100%;
+    font-size: 40px;
+}
+
+#cliente {
+    text-align: center;
+    width: 100%;
+}
+
+.information {
+    height: 150px;
+}
+
+#prezzo,
+#sconto,
+#kilometri {
+    text-align: center;
+    width: 33%;
+    line-height: 150px;
+    float: left;
+}
+
+#prezzo:before {
+    content:"Prezzo: "
+}
+
+#sconto:before {
+    content:"Sconto: -"
+}
