@@ -9,7 +9,7 @@ var prezzoFinale = prezzoNoSconto;
 if (eta < 18) {
     prezzoFinale = prezzoNoSconto - scontoMinori;
     document.getElementById('sconto').innerHTML = scontoMinori + '€';
-} else if (eta > 65)  {
+} else if (eta >= 65)  {
     prezzoFinale = prezzoNoSconto - scontoOver;
     document.getElementById('sconto').innerHTML = scontoOver + '€';
 }
