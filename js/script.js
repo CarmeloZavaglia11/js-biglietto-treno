@@ -14,6 +14,7 @@ if (eta < 18) {
     document.getElementById('sconto').innerHTML = scontoOver + '€';
 }
 
+document.getElementById('sconto').innerHTML = 0 + '€';
 document.getElementById('prezzo').innerHTML = prezzoFinale.toFixed(2) + '€';
 document.getElementById('kilometri').innerHTML =  kilometri + 'km';
 document.getElementById('cliente').innerHTML = client;
